@@ -1,6 +1,10 @@
 # Omniauth::Td::Ameritrade
 
-TODO: Write a gem description
+Omni-auth strategy to authenticate with TD Ameritrade's developer API
+
+Get your API key at: [https://developer.tdameritrade.com](https://developer.tdameritrade.com)
+
+Note that TD Ameritrade only provides Client ID. Not Client Secret is provided
 
 ## Installation
 
@@ -18,7 +22,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Here's an example for adding the middleware to a Rails app in config/initializers/omniauth.rb:
+
+```
+Rails.application.config.middleware.use OmniAuth::Builder do
+  provider :amtd, ENV['AMERITRADE_CLIENT_ID'], nil
+end
+```
 
 ## Contributing
 
