@@ -4,7 +4,8 @@ Omni-auth strategy to authenticate with TD Ameritrade's developer API
 
 Get your API key at: [https://developer.tdameritrade.com](https://developer.tdameritrade.com)
 
-Note that TD Ameritrade only provides Client ID. Not Client Secret is provided
+Note that TD Ameritrade only provides Client ID. 
+No Client Secret is provided or necessary when making the API call. 
 
 ## Installation
 
