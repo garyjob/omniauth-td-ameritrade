@@ -1,11 +1,15 @@
 # Omniauth::Td::Ameritrade
 
-Omni-auth strategy to authenticate with TD Ameritrade's developer API
+An omni-auth strategy to authenticate with TD Ameritrade's developer API.
 
 Get your API key at: [https://developer.tdameritrade.com](https://developer.tdameritrade.com)
 
 Note that TD Ameritrade only provides Client ID. 
 No Client Secret is provided or necessary when making the API call. 
+
+This implementation is useful when you need your access tokens automatically refreshed for servers that manage your portfolio.
+
+I am doubtful, users would really be keen to login to your system and allow you direct access their portfolio's management
 
 ## Installation
 
@@ -30,6 +34,8 @@ Rails.application.config.middleware.use OmniAuth::Builder do
   provider :amtd, ENV['AMERITRADE_CLIENT_ID'], nil
 end
 ```
+
+
 
 ## Contributing
 
