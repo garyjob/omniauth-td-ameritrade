@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Gary Teh"]
   spec.email         = ["garyjob@gmail.com"]
   spec.summary       = %q{A TD Ameritrade OAuth2 strategy for OmniAuth 1.x}
-  spec.description   = %q{A TD Ameritrade OAuth2 strategy for OmniAuth 1.x. This allows you to login to Google with your ruby app.}
+  spec.description   = %q{A TD Ameritrade OAuth2 strategy for OmniAuth 1.x. This allows you to login to TD Ameritrade with your ruby app.}
   spec.homepage      = "https://github.com/garyjob/omniauth-td-ameritrade"
   spec.license       = "MIT"
 
