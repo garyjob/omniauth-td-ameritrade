@@ -9,7 +9,7 @@ module OmniAuth
       option :client_options, {
         :site => "https://api.tdameritrade.com",
         :authorize_url => "https://auth.tdameritrade.com/auth",
-        :token_url => "https://api.tdameritrade.com/v1/oauth2/token"
+        :token_url => "https://api.tdameritrade.com/v1/oauth2/token?access_type=offline"
       }
 
       uid { raw_info[0]["securitiesAccount"]["accountId"] }
